@@ -3,11 +3,86 @@
 <head>
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<title>Coastal_Breeze_Retreat</title>
+	<title>Coastal_Breeze_Retreat - Booking</title>
 	<script src='https://cdn.tailwindcss.com'></script>
 	<link rel='stylesheet' href='assets/css/style.css'>
 </head>
-<body>
-	<!-- Content for booking.html will be generated here -->
+<body class="bg-gray-100">
+	<!-- Navigation Bar -->
+	<nav class="bg-white shadow-md">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16">
+				<div class="flex">
+					<div class="shrink-0 flex items-center">
+						<a href="index.html" class="text-xl font-bold text-gray-800">Coastal Breeze Retreat</a>
+					</div>
+					<div class="hidden md:ml-6 md:flex space-x-8">
+						<a href="index.html" class="text-gray-900 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Home</a>
+						<a href="suites.html" class="text-gray-900 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Suites</a>
+						<a href="amenities.html" class="text-gray-900 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Amenities</a>
+						<a href="gallery.html" class="text-gray-900 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+						<a href="booking.html" class="bg-gray-200 text-black px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Booking Form -->
+	<div class="py-12">
+		<div class="max-w-md mx-auto bg-white shadow-md rounded-md overflow-hidden">
+			<div class="py-8 px-6">
+				<h2 class="text-2xl font-semibold text-gray-800 mb-4">Booking Inquiry</h2>
+				<form action="#" method="POST">
+					<div class="mb-4">
+						<label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+						<input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name" required>
+					</div>
+					<div class="mb-4">
+						<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+						<input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email" required>
+					</div>
+					<div class="mb-4">
+						<label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone:</label>
+						<input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Phone Number">
+					</div>
+					<div class="mb-4">
+						<label for="arrival" class="block text-gray-700 text-sm font-bold mb-2">Arrival Date:</label>
+						<input type="date" id="arrival" name="arrival" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+					</div>
+					<div class="mb-4">
+						<label for="departure" class="block text-gray-700 text-sm font-bold mb-2">Departure Date:</label>
+						<input type="date" id="departure" name="departure" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+					</div>
+					<div class="mb-4">
+						<label for="guests" class="block text-gray-700 text-sm font-bold mb-2">Number of Guests:</label>
+						<select id="guests" name="guests" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+							<option value="1">1 Guest</option>
+							<option value="2">2 Guests</option>
+							<option value="3">3 Guests</option>
+							<option value="4">4 Guests</option>
+							<option value="5">5 Guests</option>
+							<option value="6">6 Guests</option>
+						</select>
+					</div>
+					<div class="mb-6">
+						<label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+						<textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+					</div>
+					<div class="flex items-center justify-between">
+						<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+							Submit Inquiry
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2023 Coastal Breeze Retreat. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
