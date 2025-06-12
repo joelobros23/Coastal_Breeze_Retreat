@@ -7,7 +7,83 @@
 	<script src='https://cdn.tailwindcss.com'></script>
 	<link rel='stylesheet' href='assets/css/style.css'>
 </head>
-<body>
-	<!-- Content for index.html will be generated here -->
+<body class="bg-gray-100">
+	<header class="bg-white shadow-md">
+		<nav class="container mx-auto py-4 px-6 flex items-center justify-between">
+			<div class="text-2xl font-bold text-gray-800">Coastal Breeze Retreat</div>
+			<div class="space-x-6">
+				<a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+				<a href="suites.html" class="text-gray-700 hover:text-blue-500">Suites</a>
+				<a href="amenities.html" class="text-gray-700 hover:text-blue-500">Amenities</a>
+				<a href="gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
+				<a href="booking.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</a>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container mx-auto mt-8 px-6">
+		<section class="hero">
+			<img src="https://picsum.photos/1200/500" alt="Beach View" class="w-full rounded-lg shadow-md">
+			<div class="mt-6">
+				<h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Coastal Breeze Retreat</h1>
+				<p class="text-gray-700 leading-relaxed">
+					Escape to paradise at Coastal Breeze Retreat, where luxury meets the serene beauty of the ocean. Our exclusive beachside rental property offers an unparalleled experience, combining elegant accommodations with breathtaking views and world-class amenities.
+					Imagine waking up to the sound of waves, spending your days lounging on pristine sands, and indulging in gourmet dining under the stars. Coastal Breeze Retreat is more than just a vacation; it's a sanctuary for those seeking tranquility and rejuvenation.
+				</p>
+			</div>
+		</section>
+
+		<section class="featured-suites mt-12">
+			<h2 class="text-3xl font-bold text-gray-800 mb-6">Featured Suites</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://picsum.photos/400/300" alt="Suite 1" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Ocean View Suite</h3>
+						<p class="text-gray-600">Indulge in breathtaking ocean views from your private balcony. This suite features a king-size bed, a spacious living area, and a luxurious bathroom.</p>
+						<a href="suites.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
+					</div>
+				</div>
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://picsum.photos/401/300" alt="Suite 2" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Deluxe Suite</h3>
+						<p class="text-gray-600">Experience ultimate comfort in our Deluxe Suite, complete with a jacuzzi tub, a fully equipped kitchen, and a separate dining area.</p>
+						<a href="suites.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
+					</div>
+				</div>
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://picsum.photos/402/300" alt="Suite 3" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Penthouse Suite</h3>
+						<p class="text-gray-600">Enjoy the pinnacle of luxury in our Penthouse Suite, offering panoramic ocean views, a private rooftop terrace, and exclusive access to our VIP services.</p>
+						<a href="suites.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="amenities mt-12">
+			<h2 class="text-3xl font-bold text-gray-800 mb-6">Our Amenities</h2>
+			<p class="text-gray-700 leading-relaxed">
+				At Coastal Breeze Retreat, we offer a wide range of amenities to ensure that your stay is as comfortable and enjoyable as possible. From our private beach access to our gourmet dining options, we have everything you need to relax and unwind.
+			</p>
+			<ul class="list-disc list-inside mt-4 text-gray-700">
+				<li>Private Beach Access</li>
+				<li>Swimming Pool and Jacuzzi</li>
+				<li>Gourmet Dining Options</li>
+				<li>Spa and Wellness Center</li>
+				<li>Fitness Center</li>
+				<li>Concierge Services</li>
+			</ul>
+			<a href="amenities.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Explore All Amenities</a>
+		</section>
+	</main>
+
+	<footer class="bg-gray-200 mt-12 py-4">
+		<div class="container mx-auto text-center text-gray-600">
+			&copy; 2024 Coastal Breeze Retreat. All rights reserved.
+		</div>
+	</footer>
 </body>
 </html>
